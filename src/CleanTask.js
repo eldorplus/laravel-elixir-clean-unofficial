@@ -23,18 +23,19 @@ class CleanTask extends Elixir.Task {
      * Build up the Gulp task.
      */
     gulpTask() {
-        return ( this.clean() );
+        return (
+            this.clean().then(() => { this.onSuccess(); })
+        );
     }
-
-
+    
     /** 
-     * Run the files through Webpack.
+     * Run the files through Clean.
+     * @returns {unresolved}
      */
     clean() {
         this.recordStep('Cleanning files');
         return del(this.dirs);
     }
 }
-
 
 export default CleanTask;

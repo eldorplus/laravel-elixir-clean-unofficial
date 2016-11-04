@@ -1,0 +1,92 @@
+{
+  "name": "laravel-elixir-clean-unofficial",
+  "version": "1.3.0",
+  "description": "Laravel Elixir Webpack 2.0 Extension",
+  "keywords": [
+    "laravel",
+    "elixir",
+    "webpack",
+    "gulp"
+  ],
+  "author": {
+    "name": "Patrick LUZOLO",
+    "email": "eldorplus@gmail.com",
+    "url": "https://github.com/eldorplus"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eldorplus/laravel-elixir-clean-unofficial"
+  },
+  "bugs": {
+    "url": "https://github.com/eldorplus/laravel-elixir-clean-unofficial/issues"
+  },
+  "homepage": "https://github.com/eldorplus/laravel-elixir-clean-unofficial",
+  "main": "dist/index.js",
+  "scripts": {
+    "updates": "npm-check-updates -u",
+    "compile": "babel --presets=es2015 -d dist src",
+    "prepublish": "npm run compile"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "jquery": "^3.1.1",
+    "laravel-elixir": "^6.0.0-11",
+    "lodash": "^4.16.4",
+    "vue": "^2.0.3",
+    "webpack": "^2.1.0-beta.25"
+  },
+  "devDependencies": {
+    "app-root-path": "^2.0.1",
+    "assets-webpack-plugin": "^3.4.0",
+    "autoprefixer": "^6.3.6",
+    "babel-cli": "^6.10.1",
+    "babel-core": "^6.7.4",
+    "babel-eslint": "^6.1.2",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.6.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-2": "^6.5.0",
+    "bower-webpack-plugin": "^0.1.9",
+    "buble": "^0.12.3",
+    "buble-loader": "^0.2.2",
+    "chokidar": "^1.6.0",
+    "css-loader": "^0.25.0",
+    "css-mqpacker": "^5.0.1",
+    "eslint": "^3.5.0",
+    "eslint-config-standard": "^6.0.0",
+    "eslint-friendly-formatter": "^2.0.5",
+    "eslint-loader": "^1.3.0",
+    "eslint-plugin-html": "^1.5.2",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^3.4.2",
+    "postcss-loader": "^0.13.0",
+    "progress-bar-webpack-plugin": "^1.9.0",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.0.2",
+    "shelljs": "^0.7.0",
+    "style-loader": "^0.13.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^2.3.1",
+    "url-loader": "^0.5.7",
+    "vue-html-loader": "^1.0.0",
+    "vue-loader": "^9.7.0",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-hot-middleware": "^2.13.0",
+    "webpack-notifier": "^1.3.0",
+    "webpack-stream": "^3.2.0"
+  },
+  "peerDependencies": {
+    "laravel-elixir": "^6.0.0-11"
+  },
+  "engines": {
+    "node": ">=6.7.0",
+    "npm": ">=3.10.3"
+  },
+  "license": "MIT"
+}

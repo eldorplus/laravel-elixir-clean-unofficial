@@ -1,0 +1,10 @@
+.idea
+.DS_Store
+npm-debug.log
+src/
+bower_components/
+node_modules/
+resources/
+public/
+gulpfile.js
+bower.json

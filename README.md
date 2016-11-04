@@ -5,7 +5,7 @@ Clean built files or folders.
 ## Install
 
 ```sh
-$ npm install laravel-elixir-clean --save-dev
+$ npm install llaravel-elixir-clean-unofficial --save-dev
 ```
 
 ## Usage
@@ -14,12 +14,12 @@ Clean folders: `public/css`, `public/js`, `public/build`.
 
 ```javascript
 var elixir = require('laravel-elixir');
-require('laravel-elixir-clean');
+require('laravel-elixir-clean-unofficial');
 
 elixir(function(mix) {
   mix.clean()
-     .less('*.less')
-     .coffee('*.coffee');
+     .less('app.less')
+     .browserify('app.js');
 });
 ```
 

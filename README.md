@@ -5,7 +5,7 @@ Clean built files or folders.
 ## Install
 
 ```sh
-$ npm install llaravel-elixir-clean-unofficial --save-dev
+$ npm install laravel-elixir-clean-unofficial --save-dev
 ```
 
 ## Usage

@@ -25,5 +25,5 @@ Elixir.extend(taskName, function(options) {
     /**
      * clean task
      */
-    new CleanTask(taskName, options);
+    new CleanTask(taskName, options).watch(Elixir.config.assetsPath + '/**');
 });

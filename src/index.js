@@ -20,7 +20,6 @@ const taskName = 'clean';
  | 
  |
  */
-
 Elixir.extend(taskName, function(options) {
     /**
      * clean task

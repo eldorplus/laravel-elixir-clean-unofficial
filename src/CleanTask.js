@@ -34,7 +34,7 @@ class CleanTask extends Elixir.Task {
      */
     clean() {
         this.recordStep('Cleanning files');
-        return del(this.dirs);
+        return del(this.dirs, {force: true});
     }
 }
 

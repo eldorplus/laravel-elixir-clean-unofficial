@@ -23,16 +23,13 @@ class CleanTask extends Elixir.Task {
      * Build up the Gulp task.
      */
     gulpTask() {
-        return (
-          /*
-          * this.clean().then(() => { this.onSuccess(); })
-          */
-          gulp.src(this.dirs)
-          .pipe(this.clean())
+      /*
+      * this.clean().then(() => { this.onSuccess(); })
+      */
+      return this.clean()
           .on('error', this.onError())
           .pipe(this.saveAs(gulp))
-          .pipe(this.onSuccess())
-        );
+          .pipe(this.onSuccess());
     }
 
     /**
@@ -40,8 +37,10 @@ class CleanTask extends Elixir.Task {
      * @returns {unresolved}
      */
     clean() {
+        var that = this;
         this.recordStep('Cleanning files');
-        return del(this.dirs, {force: true});
+        return del(this.dirs, {force: true})
+        .then(() => { return that; });
     }
 }
 

@@ -1,9 +1,13 @@
 /**
  * Require main dependencies
  */
-import gulp from 'gulp';
-import del from 'del';
+/**
+ * import gulp from 'gulp';
+ * import del from 'del';
+ **/
 
+let gulp = require('gulp');
+let del = del = require('del');
 /**
  * Webpack task
  */
@@ -23,9 +27,9 @@ class CleanTask extends Elixir.Task {
      * Build up the Gulp task.
      */
     gulpTask() {
-      /*
+      /**
       * this.clean().then(() => { this.onSuccess(); })
-      */
+      **/
       return this.clean()
           .on('error', this.onError())
           .pipe(this.saveAs(gulp))
@@ -34,13 +38,18 @@ class CleanTask extends Elixir.Task {
 
     /**
      * Run the files through Clean.
-     * @returns {unresolved}
+     * @returns {gulp}
      */
     clean() {
-        var that = this;
         this.recordStep('Cleanning files');
-        return del(this.dirs, {force: true})
-        .then(() => { return that; });
+        return gulp.src('').pipe(del(this.dirs, {force: true}));
+
+        /**
+         * var that = this;
+         * this.recordStep('Cleanning files');
+         * return del(this.dirs, {force: true})
+         * .then(() => { return that; });
+         **/
     }
 }
 

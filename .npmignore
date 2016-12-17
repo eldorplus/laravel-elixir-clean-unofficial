@@ -8,3 +8,4 @@ resources/
 public/
 gulpfile.js
 bower.json
+yarn.lock
